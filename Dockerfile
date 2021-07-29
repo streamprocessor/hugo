@@ -1,7 +1,7 @@
 FROM node:13.10-alpine
 
 # Get Hugo Version
-ARG HUGO_VERSION=0.67.1
+ARG HUGO_VERSION=0.86.0
 
 # Downloading & Installing Hugo & Firebase
 RUN set -x && \
