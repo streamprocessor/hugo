@@ -1,6 +1,5 @@
 name: 'Hugo'
 description: 'A Github action build a Hugo site'
-author: 'zorro'
 
 runs:
   using: 'docker'
