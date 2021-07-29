@@ -1,19 +1,7 @@
-name: "Hugo"
-description: "A Github action build a Hugo site"
-author: ""
-
-branding:
-  icon: 'arrow-up-right'
-  color: 'red'
-  label: 'hugo-on-firebase'
-
-#inputs:
-#  firebase_token:
-#    description: "Firebase token used to deploy on Firebase on your behalf. You can get it using command 'firebase login:ci' and then set it in Github Secrets as FIREBASE_TOKEN variable."
-#    required: true
+name: 'Hugo'
+description: 'A Github action build a Hugo site'
+author: 'zorro'
 
 runs:
   using: 'docker'
   image: 'Dockerfile'
-#  args:
-#    - ${{ inputs.firebase_token }}

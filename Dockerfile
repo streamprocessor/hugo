@@ -21,4 +21,5 @@ RUN set -x && \
 
 # Start the building & deploying now
 ADD entrypoint.sh /entrypoint.sh
-ENTRYPOINT ["sh", "/entrypoint.sh"]
+#ENTRYPOINT ["sh", "/entrypoint.sh"]
+ENTRYPOINT ["/entrypoint.sh"]
