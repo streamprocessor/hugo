@@ -7,7 +7,7 @@ Add a simple example Github Action workflow like this in your Github Hugo site r
 ```yaml
 # This is a simple workflow to build a Hugo site and then deploy it on Firebase Hosting 
 
-name: Set Hugo-On-Fire
+name: Hugo
 
 # Triggers when any commit is pushed on Master
 on:
@@ -25,7 +25,7 @@ jobs:
     - uses: actions/checkout@v2
 
     # Fetch Hugo to Firebase docker image
-    - uses: streamprocessor/hugo-firebase-action@master
+    - uses: streamprocessor/hugo@master
       env:
         FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
 ```
