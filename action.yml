@@ -1,19 +1,19 @@
-name: "hugo-firebase-action"
-description: "A Github action build a Hugo site and then deploy it to Firebase Hosting"
+name: "hugo-on-firebase"
+description: "A Github action build a Hugo site"
 author: ""
 
 branding:
   icon: 'arrow-up-right'
   color: 'red'
-  label: 'hugo-firebase-action'
+  label: 'hugo-on-firebase'
 
-inputs:
-  firebase_token:
-    description: "Firebase token used to deploy on Firebase on your behalf. You can get it using command 'firebase login:ci' and then set it in Github Secrets as FIREBASE_TOKEN variable."
-    required: true
+#inputs:
+#  firebase_token:
+#    description: "Firebase token used to deploy on Firebase on your behalf. You can get it using command 'firebase login:ci' and then set it in Github Secrets as FIREBASE_TOKEN variable."
+#    required: true
 
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  args:
-    - ${{ inputs.firebase_token }}
+#  args:
+#    - ${{ inputs.firebase_token }}
