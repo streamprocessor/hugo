@@ -1,11 +1,11 @@
-name: "Hugo on Fire"
+name: "hugo-firebase-action"
 description: "A Github action build a Hugo site and then deploy it to Firebase Hosting"
-author: "Wajahat Karim (https://wajahatkarim.com)"
+author: ""
 
 branding:
   icon: 'arrow-up-right'
   color: 'red'
-  label: 'Hugo On Fire'
+  label: 'hugo-firebase-action'
 
 inputs:
   firebase_token:

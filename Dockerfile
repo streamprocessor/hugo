@@ -1,7 +1,5 @@
 FROM node:13.10-alpine
 
-LABEL maintainer="Wajahat Karim (https://wajahatkarim.com)"
-
 # Get Hugo Version
 ARG HUGO_VERSION=0.67.1
 
